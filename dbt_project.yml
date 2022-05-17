@@ -36,3 +36,12 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
+    sample_dags:
+      sub_directory1:
+        +materialized: view
+      sub_directory2:
+        +materialized: view
+      +materialized: table
+
+
+
