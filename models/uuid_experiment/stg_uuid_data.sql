@@ -8,7 +8,7 @@ source1 as (
     
     from {{ source('sf_tpch', 'customer') }}
     order by c_custkey
-    limit 1000
+    limit 1000000000
 ),
 
 source2 as (
@@ -19,7 +19,7 @@ source2 as (
     
     from {{ source('sf_tpch', 'customer') }}
     order by c_custkey
-    limit 1000
+    limit 1000000000
 
 ),
 

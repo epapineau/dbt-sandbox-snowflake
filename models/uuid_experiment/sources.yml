@@ -3,6 +3,6 @@ version: 2
 sources:
   - name: sf_tpch
     database: raw_tpch
-    schema: tpch_sf100
+    schema: tpch_sf1000
     tables:
       - name: customer

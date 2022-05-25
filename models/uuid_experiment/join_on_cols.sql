@@ -1,4 +1,5 @@
-{{ config(materialized='table') }}
+-- depends_on: {{ ref('join_on_key') }}
+-- ^ no it doesn't, but this ensures we operate with threads = 1 against snowflake
 
 with
 
