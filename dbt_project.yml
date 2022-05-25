@@ -36,3 +36,8 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
+    uuid_experiment:
+      +materialized: table
+      +sql_header: alter session set USE_CACHED_RESULT = False;
+
+
