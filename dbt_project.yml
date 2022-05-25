@@ -42,6 +42,7 @@ models:
       sub_directory2:
         +materialized: view
       +materialized: table
-
+    uuid_experiment:
+      +sql_header: alter session set USE_CACHED_RESULT = False;
 
 

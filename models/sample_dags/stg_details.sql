@@ -1,1 +1,0 @@
-select 2 as column_name
