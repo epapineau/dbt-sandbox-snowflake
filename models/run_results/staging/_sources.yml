@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: snowflake_sandbox
+    database: "{{ target.database }}"
+    schema: "{{ target.schema }}"
+    tables:
+      - name: run_results_json
