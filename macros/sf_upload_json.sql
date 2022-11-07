@@ -18,7 +18,7 @@
 {% do run_query (create_stage) %}
 
 {% set put_statement %}
-    put 'file://target/run_results.json' @{{ stage_name }}
+    put 'file://target/run_results.json' @{{ stage_name }} overwrite = true
 {% endset %}
 
 {{ log(put_statement, info=True) }}
