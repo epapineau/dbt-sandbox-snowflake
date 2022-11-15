@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: masking
+    description: A model working with masked data
+    columns:
+      - name: name
+        tests:
+          - not_null
+          - unique
+      - name: email
+        meta:
+          masking_policy: example
+      - name: street
+        meta:
+          masking_policy: example
